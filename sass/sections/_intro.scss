@@ -1,0 +1,20 @@
+@use '../custom' as *;
+@use '../component/mixins' as *;
+
+.intro-section{
+  @include gradient();
+  padding-top: 10rem;
+}
+
+.intros{
+  text-transform: capitalize;
+  color: $white;
+  h1{
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}

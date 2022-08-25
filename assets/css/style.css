@@ -17687,6 +17687,11 @@ textarea.form-control-lg {
   transition: all 0.3s;
   color: #9926f0;
 }
+@media (max-width: 575.98px) {
+  .rounded-button {
+    display: none;
+  }
+}
 .rounded-button span {
   position: absolute;
   background-color: #9926f0;
@@ -17719,6 +17724,24 @@ textarea.form-control-lg {
 .main-nav li a {
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.intro-section {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  padding-top: 10rem;
+}
+
+.intros {
+  text-transform: capitalize;
+  color: #fff;
+}
+.intros h1 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.intros p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
