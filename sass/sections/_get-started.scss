@@ -1,0 +1,28 @@
+@use '../custom' as *;
+@use '../component/mixins' as *;
+
+.contact{
+  padding: 4rem 0;
+  background-color: $gray-200;
+}
+
+.cat-info{
+  padding: 3rem;
+  margin: 1rem 0;
+
+  &__list{
+    position: relative;
+    list-style: none;
+    display: block;
+    padding: 0.5rem 0 0 0.5rem;
+    margin-bottom: 0.7rem;
+    li{
+      margin-bottom: 0.3rem;
+      i{
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+  }
+}

@@ -40,7 +40,7 @@
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
@@ -17750,6 +17750,17 @@ body {
   background-color: #9926f0;
 }
 
+.title {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  background-image: linear-gradient(to right, #9926f0, #d122e3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .main-nav {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
@@ -17834,16 +17845,6 @@ body {
   font-size: 2.5rem;
   color: #9926f0;
 }
-.services__content .title {
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  font-weight: 600;
-  display: inline-block;
-  background-image: linear-gradient(to right, #9926f0, #d122e3);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .services__pic {
   width: 100%;
 }
@@ -17897,6 +17898,74 @@ body {
 .testimonials__name p {
   padding-bottom: 2rem;
   text-transform: capitalize;
+}
+
+.portfolio {
+  padding: 4rem;
+}
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid #BB6EF5;
+}
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-box .portfolio-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(153, 38, 240, 0.7);
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  transition: transform 0.7s cubic-bezier(0, 1.44, 0.43, 0.88);
+}
+.portfolio-box .portfolio-info .caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.portfolio-box .portfolio-info .caption h4 {
+  text-transform: uppercase;
+}
+.portfolio-box:hover .portfolio-info {
+  transform: translateY(0);
+}
+
+.contact {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+
+.cat-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.cat-info__list {
+  position: relative;
+  list-style: none;
+  display: block;
+  padding: 0.5rem 0 0 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.cat-info__list li {
+  margin-bottom: 0.3rem;
+}
+.cat-info__list li i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
